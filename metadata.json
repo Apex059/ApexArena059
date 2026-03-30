@@ -1,0 +1,5 @@
+{
+  "name": "Apex Arena Portal",
+  "description": "A simple portal to play various web-based games via iframes.",
+  "requestFramePermissions": []
+}
