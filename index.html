@@ -3,11 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>Apex Arena | Unblocked Games</title>
   </head>
-  <body>
+  <body class="bg-[#0a0a0a]">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="./src/main.jsx"></script>
+    <script>
+      // Simple check to see if the app loaded after 5 seconds
+      setTimeout(() => {
+        const root = document.getElementById('root');
+        if (root && root.innerHTML === '' && !document.querySelector('noscript')) {
+          console.error('App failed to load. Check the console for errors.');
+          const msg = document.createElement('div');
+          msg.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);color:white;text-align:center;font-family:sans-serif;';
+          msg.innerHTML = '<h1>App failed to load</h1><p>Check the browser console for errors. If you are on GitHub Pages, make sure you deployed the <b>dist</b> folder, not the source files.</p>';
+          document.body.appendChild(msg);
+        }
+      }, 5000);
+    </script>
   </body>
 </html>
 
